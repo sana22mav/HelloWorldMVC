@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<h2>@ViewBag.Message</h2>
+
+@using (Html.BeginForm())
+{
+    <p>Enter your name: @Html.TextBox("name")</p>
+    <input type="submit" value="Say Hello" />
+}
